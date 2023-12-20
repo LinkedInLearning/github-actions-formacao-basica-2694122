@@ -1,0 +1,46 @@
+# Crie um pipeline do GitHub Actions que irá compilar uma aplicação .net 7 e publicar no GIthub Artifacts como pacote nuget
+
+name: .NET Core
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 7.0.x
+
+    - name: Install dependencies
+      run: dotnet restore
+
+    - name: Build
+      run: dotnet build --no-restore
+
+    - name: Test
+      run: dotnet test --no-restore --verbosity normal
+
+    # genere um dotnet pack do pacote nuget
+    - name: Pack
+      run: dotnet pack --configuration Release
+
+# inclua um dotnet nugeet add source para o github artifacts
+    - name: Add GitHub Packages Source
+      run: dotnet nuget add source https://nuget.pkg.github.com/demolinkedin/index.json --name github --username demolinkedin --store-password-in-clear-text --password ${{ secrets.GITHUB_TOKEN }}
+
+# inclua um dotnet nuget push para o github artifacts
+    - name: Push to GitHub Packages
+      run: dotnet nuget push **/*.nupkg --source github --skip-duplicate --api-key ${{ secrets.GITHUB_TOKEN }}
+     

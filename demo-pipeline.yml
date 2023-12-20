@@ -1,0 +1,31 @@
+name: Build Docker
+
+on:
+  workflow_dispatch:
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: azure/docker-login@v1
+        with:
+          login-server: ghcr.io
+          username: "demolinkedin"
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build the Docker image
+        run: |
+         docker build . --file Dockerfile --tag ghcr.io/demolinkedin/demo-docker:latest
+         
+
+      - name: Docker Push
+        run: |
+          docker push ghcr.io/demolinkedin/demo-docker:latest
+       

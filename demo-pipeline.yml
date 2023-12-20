@@ -1,12 +1,25 @@
- name: Issue Vulnerable
+# Crie um pipeline no GitHub Actions para comentar em uma issue recem criada
 
- on:
-   issues:
-     types: [opened]
- jobs:
-   commentCreated:
-     runs-on: ubuntu-latest
-     env:
-       ISSUE_TITLE: ${{ github.event.issue.title }}
-     steps:
-       - run: echo "$ISSUE_TITLE"
+name: Issue
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  issue:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Comment
+        uses: actions/github-script@v3
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            github.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: 'Boas Vindas ao Projeto!'
+            })

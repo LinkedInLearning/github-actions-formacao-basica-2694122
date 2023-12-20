@@ -1,0 +1,12 @@
+ name: Issue Vulnerable
+
+ on:
+   issues:
+     types: [opened]
+ jobs:
+   commentCreated:
+     runs-on: ubuntu-latest
+     env:
+       ISSUE_TITLE: ${{ github.event.issue.title }}
+     steps:
+       - run: echo "$ISSUE_TITLE"

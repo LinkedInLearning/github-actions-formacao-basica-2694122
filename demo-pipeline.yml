@@ -1,0 +1,17 @@
+name: Exemplo de Pipeline de CI
+
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: contains(github.ref, 'refs/heads/feature/')
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Configuração do Ambiente
+      run: echo "Configurando o ambiente..."
+
+    - name: Executar Build
+      run: echo "Executando o processo de build..."

@@ -1,0 +1,16 @@
+# Criar um pipeline no GitHub Actions que será executado quando um push for realizado
+# para a branch main e escreva na tela "Olá, mundo!"
+
+name: Push
+
+on:
+  push:
+    branches:
+      - feature/*
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello world
+        run: echo "Olá, mundo!"

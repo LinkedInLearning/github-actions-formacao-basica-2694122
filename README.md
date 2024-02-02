@@ -31,7 +31,7 @@ As ramificações são estruturadas para corresponder aos vídeos do curso. A co
 **Julio Cesar Bueno de Arruda** 
 
 [0]: # (Replace these placeholder URLs with actual course URLs) 
-[lil-course-url]: https://www.linkedin.com 
-[lil-thumbnail-url]: https:// 
+[lil-course-url]: https://www.linkedin.com/learning/github-actions-formacao-basica 
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/D560DAQHqjh1undEbbA/learning-public-crop_675_1200/0/1706870410219?e=2147483647&v=beta&t=cUKI4nlQV4HO3pRY1L2N5fcWHuqltgMf_jv9MjcGsRI 
 
 [1]: # (End of BP-Instruction ###############################################################################################) 

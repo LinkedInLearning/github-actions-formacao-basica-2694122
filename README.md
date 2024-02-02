@@ -1,12 +1,12 @@
-# Descubra o GitHub Actions
+# GitHub Actions: Formação Básica
 
-Este é o repositório do curso `Descubra o GitHub Actions`. Você pode acessar o conteúdo completo no [LinkedIn Learning][lil-course-url]. 
+Este é o repositório do curso `GitHub Actions: Formação Básica`. Você pode acessar o conteúdo completo no [LinkedIn Learning][lil-course-url]. 
 
 ![Título completo do curso][lil-thumbnail-url]  
 
 Confira o arquivo Readme na ramificação principal para obter instruções e informações atualizadas. 
 
-Bem-vindo e bem-vinda ao curso Descubra o GitHub Actions! Este é um guia extenso sobre a poderosa ferramenta de automação e integração contínua do GitHub. Aprenda com o primeiro GitHub Star do Brasil, Julio Arruda, a configurar pipelines de CI/CD, automatizar tarefas e implantar código com precisão. Entenda a vitalidade deste recurso no panorama do desenvolvimento de software. Mergulhe em tópicos como pipelines, jobs, steps, e triggers. Domine a publicação de pacotes NuGet e Docker, assegurando a eficiência no desenvolvimento. Explore a integração com “pushes” e “pull requests”. Abordaremos segurança, estratégias avançadas e forneceremos recursos extras. Prepare-se para dominar o GitHub Actions e saber tudo sobre essa ferramenta fantástica de automação. 
+Bem-vindo e bem-vinda ao curso GitHub Actions: Formação Básica! Este é um guia extenso sobre a poderosa ferramenta de automação e integração contínua do GitHub. Aprenda com o primeiro GitHub Star do Brasil, Julio Arruda, a configurar pipelines de CI/CD, automatizar tarefas e implantar código com precisão. Entenda a vitalidade deste recurso no panorama do desenvolvimento de software. Mergulhe em tópicos como pipelines, jobs, steps, e triggers. Domine a publicação de pacotes NuGet e Docker, assegurando a eficiência no desenvolvimento. Explore a integração com “pushes” e “pull requests”. Abordaremos segurança, estratégias avançadas e forneceremos recursos extras. Prepare-se para dominar o GitHub Actions e saber tudo sobre essa ferramenta fantástica de automação. 
 
 ## Instruções 
 
@@ -31,7 +31,7 @@ As ramificações são estruturadas para corresponder aos vídeos do curso. A co
 **Julio Cesar Bueno de Arruda** 
 
 [0]: # (Replace these placeholder URLs with actual course URLs) 
-[lil-course-url]: https://www.linkedin.com 
-[lil-thumbnail-url]: https:// 
+[lil-course-url]: https://www.linkedin.com/learning/github-actions-formacao-basica 
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/D560DAQHqjh1undEbbA/learning-public-crop_675_1200/0/1706870410219?e=2147483647&v=beta&t=cUKI4nlQV4HO3pRY1L2N5fcWHuqltgMf_jv9MjcGsRI 
 
 [1]: # (End of BP-Instruction ###############################################################################################) 

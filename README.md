@@ -18,13 +18,7 @@ As ramificações são estruturadas para corresponder aos vídeos do curso. A co
 
 ## Instalação 
 
-1. Para usar esses arquivos de exercícios, você precisa baixar o seguinte programa: 
-
-- [software] 
-
-2. Clone este repositório em seu computador local (macOS) ou CMD (Windows), ou use uma ferramenta de interface gráfica do usuário (GUI), como o SourceTree, para fazer isso. 
-
-3. [Instruções específicas do curso]. 
+1. Clone este repositório em seu computador local (macOS) ou CMD (Windows), ou use uma ferramenta de interface gráfica do usuário (GUI), como o SourceTree, para fazer isso. 
 
 ### Instrutor(a) 
 
